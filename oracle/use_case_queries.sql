@@ -21,7 +21,7 @@ ORDER BY RatingCount DESC;
 --FETCH FIRST 300 ROWS ONLY;
 
 -- 3 Show all purchased products of a specific user
-SELECT p.ProductId, p.ProductType, p.URL, r.Rating
+SELECT p.ProductId, p.ProductType, p.URL
 FROM Products p
 JOIN Ratings r ON p.ProductId = r.ProductId
 WHERE r.UserId = 'ALNFHVS3SC4FV';
